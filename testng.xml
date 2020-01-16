@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/felipe.fuenzalida/Acamica/Appium">
+        <groups>
+            <run>
+                <include name="SuiteOpenDeviceLab"/>
+                <include name="removeFavoritesDevice"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.OpenDeviceLabTest">
+                <methods>
+                    <include name="DeviceLabDetailScreen"/>
+                    <include name="SearchByCountry"/>
+                    <include name="AboutOpenDeviceLab"/>
+                    <include name="FavoriteDeviceLab"/>
+                    <include name="CommentDevice"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
